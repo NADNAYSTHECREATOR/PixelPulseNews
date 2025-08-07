@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pixel Pulse</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="styles.css"
+    rel="stylesheet"
+  />
+  </head>
+<body>
+  <nav class="navbar">
+    <a href = "index.html"> <div class="logo" style = "color: var(--accent-blue)">Pixel Pulse</div></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="newsletters.html">Newsletters</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="intro" id="home">
+    <br>
+    <h1>Welcome to Pixel Pulse</h1>
+    <p>Empowering the next generation through STEM education.</p>
+    <br>
+    
+  </section>
+
+  
+  <section class="about-us" id="home">
+    <h1>About Us</h1>
+    <p>Pixel Pulse is a youth-led initiative dedicated to tech journalism, STEM research, and educational content. Our mission is to provide valuable insights, emerging trends, breaking news, and STEM-
+related opportunities to empower students and tech enthusiasts.</p>
+      <div class="about-features-row">
+    <div class="about-feature">
+      <div class="feature-icon">🎓</div>
+      <div class="feature-text">Educational Resources</div>
+      <br>
+      <h3>Access comprehensive educational materials, tutorials, and guides designed to support your STEM learning journey.</h3>
+    </div>
+    <div class="about-feature">
+      <div class="feature-icon">🔬</div>
+      <div class="feature-text">STEM Research</div>
+      <br>
+      <h3>Explore original research papers and analyses across various STEM fields, contributed by our talented team of young researchers.</h3>
+    </div>
+    <div class="about-feature">
+      <div class="feature-icon">📰</div>
+      <div class="feature-text">Tech Journalism</div>
+      <br>
+      <h3>Stay informed with our cutting-edge coverage of the latest technological advancements, breakthroughs, and industry trends.</h3>
+    </div>
+  </div>
+  </section> 
+
+  <section class="team-snippet">
+    <h2>Meet Our Team</h2>
+    <p>
+      Discover every single one of the passionate minds behind Pixel Pulse!
+    </p>
+    <div class="team-grid">
+    <div class="team-member">
+      <img src="https://dzoxjkfkahmyylvgiibw.supabase.co/storage/v1/object/public/team-images/1744584649464-IMG_3289.webp"  class="team-photo" />
+      <div class="team-name">Soha</div>
+      <div class="team-role">Founder & President</div>
+      <div class="team-desc">Hi there! I'm Soha, the founder and president of Pixel Pulse. I'm currently pursuing STEM and planning to major in either computer science or data science (still deciding!) at university. I truly hope Pixel Pulse grows into a valuable platform for both STEM students and beyond! I love reading and writing. :)</div>
+    </div>
+    <div class="team-member">
+      <img src="https://cdn.glitch.global/e935e5cb-fc33-4f8d-a0d2-76cc83905dc9/shambhavee.jpg?v=1739816711854"  class="team-photo" />
+      <div class="team-name">Shambavee</div>
+      <div class="team-role">Vice President</div>
+      <div class="team-desc">I'm Shambhavee, a high school student studying Humanities, and I plan on pursuing Business Administration after school. Apart from Pixel Pulse, I've participated in a COP29 project and completed a journalism course. I love reading books, writing, and video editing.</div>
+    </div>
+    <div class="team-member">
+      <img src="https://dzoxjkfkahmyylvgiibw.supabase.co/storage/v1/object/public/team-images/1744580264302-breana2.jpg"  class="team-photo" />
+      <div class="team-name">Ryan</div>
+      <div class="team-role">Director Of Operations</div>
+      <div class="team-desc">Hi I’m Ryan! I’m a high school student with a deep history of education in finance. I love seeing the way the finance world works! I aim to pursue a degree in business administration in the future. I’m looking forward to serving on the executive board as the Director Of Operations.</div>
+    </div>
+    </div>
+    <a href="team.html" class="btn">Meet the Team</a>
+  </section>
+
+  <section class="research-snippet">
+    <h2>Research</h2>
+    <p>
+      Explore our research projects and papers!
+    </p>
+    <a href="research.html" class="btn">Read More</a>
+  </section>
+
+  <section class="newsletter-snippet">
+    <h2>Newsletters</h2>
+    <p>
+      Stay up to date with our latest findings, stories, and insights through
+      our regular newsletters.
+    </p>
+    <a href="newsletters.html" class="btn">See Newsletters</a>
+  </section>
+
+ <section id = "contact" class="contact fade-section contact-section">
+  <h2>Get in Touch</h2>
+  <p>Have questions, ideas, or want to collaborate? We'd love to hear from you.</p>
+
+  <form class="contact-form" onsubmit="sendEmail(event)">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="text" name="subject" placeholder="Your Subject" required />
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+ <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Pixel Pulse</h3>
+        <p>Empowering the next generation through STEM education.</p>
+      </div>
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="newsletters.html">Newsletters</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+       <p>
+  <a href="mailto:pixelpulsenewsletterr@gmail.com">
+    pixelpulsenewsletterr@gmail.com
+  </a>
+</p>
+<p>
+  <a href="https://www.instagram.com/pixelpulsenews/" target="_blank">
+    @pixelpulsenews
+  </a>
+</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  </body>
