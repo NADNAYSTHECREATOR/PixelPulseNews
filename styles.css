@@ -47,6 +47,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.intro, .about-us, .team-snippet, .research-snippet, .newsletter-snippet, .contact {
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+}
+.intro:hover, .about-us:hover, .team-snippet:hover, .research-snippet:hover, .newsletter-snippet:hover, .contact:hover {
+  box-shadow: 0 24px 48px rgba(0,0,0,0.18);
+  transform: translateY(-6px) scale(1.01);
+  background: linear-gradient(120deg, var(--accent-light) 0%, var(--off-white) 100%);
+}
+
 main {
     text-align:"center";
 }
@@ -74,6 +83,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     animation: slideDown 0.8s ease-in-out;
+    
 }
 
 nav .logo {
@@ -356,6 +366,24 @@ nav ul li a:focus {
     margin-bottom: 2rem;
     font-family: 'Playfair Display', serif;
     font-weight: 400;
+}
+
+/*about us more*/
+.about-feature {
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s;
+}
+.about-feature:hover, .about-feature:focus-within {
+  background: linear-gradient(120deg, var(--primary) 0%, var(--off-white) 100%);
+  box-shadow: 0 16px 40px 0 rgba(62,92,118,0.18), 0 2px 8px 0 rgba(62,92,118,0.10);
+  transform: translateY(-12px) scale(1.07) rotate(-1deg);
+}
+.about-feature .feature-icon {
+  transition: font-size 0.3s, transform 0.3s;
+}
+.about-feature:hover .feature-icon, .about-feature:focus-within .feature-icon {
+  font-size: 5rem;
+  transform: rotate(-6deg) scale(1.1);
 }
 
 /* buttons with light sweep */
