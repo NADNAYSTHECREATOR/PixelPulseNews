@@ -87,7 +87,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     animation: slideDown 0.8s ease-in-out;
-    
 }
 
 nav .logo {
@@ -138,6 +137,26 @@ nav ul li a:focus {
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem 1.5rem;
+        flex-wrap: wrap; 
+    }
+
+    nav ul {
+        flex-wrap: wrap; 
+        gap: 1rem;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.6rem;
     }
 }
 
