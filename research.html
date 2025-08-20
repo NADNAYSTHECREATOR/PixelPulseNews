@@ -27,17 +27,17 @@
     </div>
       <!-- Filter Buttons -->
       <div id="research-filter-buttons" class="research-filter">
-        <button class="research-filter btn">All</button>
-        <button class="research-filter btn">Psychology</button>
-        <button class="research-filter btn">Physics + Math</button>
-        <button class="research-filter btn">Chemistry</button>
-        <button class="research-filter btn">Computer Science</button>
+        <button id="all" class="research-filter-btn btn" data-selected="true">All</button>
+        <button id="psychology" class="research-filter-btn btn">Psychology</button>
+        <button id="physics-math" class="research-filter-btn btn">Physics + Math</button>
+        <button id="chemistry" class="research-filter-btn btn">Chemistry</button>
+        <button id="computer-science" class="research-filter-btn btn">Computer Science</button>
       </div>
 
       <!-- Research Grid -->
       <div class="" id="research-cards"> 
 
-      <div class="research-card">
+      <div class="research-card physics-math">
         <p>March 5, 2025</p>
         <h3>Sustainable Materials in Electronics</h3>
           <p>This study investigates eco-friendly materials for electronic components, focusing on biodegradable semiconductors and recyclable conductors. We prese...</p>
@@ -46,7 +46,7 @@
           </a>
       </div>
 
-      <div class="research-card">
+      <div class="research-card computer-science">
         <p>March 1, 2025</p>
         <h3>Quantum Cryptography: Securing the Future</h3>
           <p>A detailed examination of quantum cryptography principles and their practical applications in cybersecurity. We discuss current limitations and future...</p>
@@ -55,7 +55,7 @@
           </a>
       </div>
 
-      <div class="research-card">
+      <div class="research-card computer-science">
         <p>February 20, 2025</p>
         <h3>Neural Networks in Cognitive Development</h3>
           <p>An exploration of how artificial neural networks can help us understand human cognitive development. This research bridges computer science and develo...</p>
@@ -64,7 +64,7 @@
           </a>
       </div>
 
-      <div class="research-card">
+      <div class="research-card computer-science">
         <p>February 15, 2025</p>
         <h3>Machine Learning Applications in Chemical Analysis</h3>
           <p>This paper presents novel applications of machine learning algorithms in chemical analysis, including spectroscopy and molecular modeling. We demonstr...</p>
@@ -73,7 +73,7 @@
           </a>
       </div>
 
-      <div class="research-card">
+      <div class="research-card psychology">
         <p>February 10, 2025</p>
         <h3>The Psychology of STEM Education: Gender Perspectives</h3>
           <p>A comprehensive study examining psychological factors affecting gender representation in STEM fields. This research provides insights into effective i...</p>
@@ -116,5 +116,6 @@
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
