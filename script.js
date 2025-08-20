@@ -1,7 +1,3 @@
-
- 
-
-
 function sendEmail(event) {
   event.preventDefault();
   const form = event.target;
@@ -18,3 +14,30 @@ function sendEmail(event) {
 
   window.open(mailtoLink, '_blank');
 }
+
+//! RESEARCH PAGE JS
+
+const buttonContainer = document.querySelector('#research-filter-buttons');
+const researchCards = document.querySelectorAll('.research-card');
+
+buttonContainer.addEventListener('click', (event) => {
+  if (event.target.classList.contains('research-filter-btn')) {
+    const filterId = event.target.id;
+
+    const researchFilterBtn = buttonContainer.querySelectorAll('.research-filter-btn');
+    researchFilterBtn.forEach((btn) => {
+      btn.removeAttribute('data-selected');
+    });
+
+    event.target.setAttribute('data-selected', 'true');
+
+    researchCards.forEach((card) => {
+
+      if (filterId === 'all' || card.classList.contains(filterId)) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+});
