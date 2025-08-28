@@ -5,20 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pixel Pulse - Newsletters</title>
   <!-- FAVICONS -->
-  <link rel="icon" type="image/png" href="assets/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <link rel="shortcut icon" href="assets/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="assets/icons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
   <meta name="apple-mobile-web-app-title" content="Pixel Pulse" />
-  <link rel="manifest" href="assets/site.webmanifest" />
+  <link rel="manifest" href="assets/icons/site.webmanifest" />
   <!-- Playfair Display Font -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <!-- Stylesheet -->
   <link href="styles.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
   <nav>
-    <a href = "index.html"> <div class="logo" style = "color: var(--accent-blue)">Pixel Pulse</div></a>
+    <div class="logo">Pixel Pulse</div>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="team.html">Team</a></li>
@@ -29,13 +31,56 @@
   </nav>
 
   <main>
-    <h1>Our Newsletters</h1>
-    <p>
-      Stay up to date with our latest insights, research findings, and community updates!
-    </p>
+    <div class="page-intro">
+      <h1>Our Newsletters</h1>
+      <p class="">Stay updated with our latest insights, research findings, and community updates</p>
+    </div>
+      <!-- Newsletter Grid -->
+      <div class="" id="newsletter-cards"> 
+        <h2 class="featured-section">Featured Newsletters</h2>
+      
+        <div class="newsletter-card" id="fetured-newsletter">
+          <p>January 26, 2025</p>
+          <h3>Pixel Pulse Unplugged</h3>
+            <p>Winter Edition #1</p>
+            <a href="https://cdn.glitch.global/e935e5cb-fc33-4f8d-a0d2-76cc83905dc9/Jan%20Issue%20%234.pdf?v=1741482179011" class="view-newsletter-section">
+              <span>View Newsletter</span><i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <!-- All Newsletter Cards -->
+        <h2 class="all-newsletters-section">All Newsletters</h2>
+
+        <div class="newsletter-card">
+          <p>January 19, 2025</p>
+          <h3>Pixel Pulse Unplugged</h3>
+            <p>Winter Edition #1</p>
+            <a href="https://cdn.glitch.global/e935e5cb-fc33-4f8d-a0d2-76cc83905dc9/Jan%20Issue%20%233.pdf?v=1741482178249" class="view-newsletter-section">
+              <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="newsletter-card">
+          <p>January 12, 2025</p>
+          <h3>Pixel Pulse Unplugged</h3>
+            <p>Winter Edition #1</p>
+            <a href="https://cdn.glitch.global/e935e5cb-fc33-4f8d-a0d2-76cc83905dc9/Jan%20Issue%20%232.pdf?v=1741482174119" class="view-newsletter-section">
+              <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="newsletter-card">
+          <p>January 5, 2025</p>
+          <h3>Pixel Pulse Unplugged</h3>
+            <p>Winter Edition #1</p>
+            <a href="https://cdn.glitch.global/e935e5cb-fc33-4f8d-a0d2-76cc83905dc9/Pixel%20Pulse%20Jan%20Issue%20%231.pdf?v=1741099102980" class="view-newsletter-section">
+              <span>Read More</span><i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+      </div>
   </main>
 
- <footer class="footer">
+  <footer class="footer">
     <div class="footer-container">
       <div class="footer-column">
         <h3>Pixel Pulse</h3>
@@ -59,18 +104,15 @@
       </div>
       <div class="footer-column">
         <h4>Contact Us</h4>
-       <p>
-  <a href="mailto:pixelpulsenewsletterr@gmail.com">
-    pixelpulsenewsletterr@gmail.com
-  </a>
-</p>
-<p>
-  <a href="https://www.instagram.com/pixelpulsenews/" target="_blank">
-    @pixelpulsenews
-  </a>
-</p>
+      <p>
+        <a href="mailto:pixelpulsenewsletterr@gmail.com">pixelpulsenewsletterr@gmail.com</a>
+      </p>
+      <p>
+        <a href="https://www.instagram.com/pixelpulsenews/" target="_blank">@pixelpulsenews</a>
+      </p>
       </div>
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
