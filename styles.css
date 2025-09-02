@@ -763,6 +763,41 @@ main p {
   }
 }
 
+/* SPOTLIGHT CAROUSEL */
+.spotlight-carousel-window {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background: var(--off-white, #e6e8e6);
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+  margin-top: 100px;
+}
+
+.spotlight-carousel-window h2 {
+  color: var(--accent-blue);
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--accent-blue);
+  text-align: center;
+}
+
+.spotlight-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.spotlight-item {
+  flex: 0 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.spotlight-item p {
+  margin: 0;
+  line-height: 1.6;
+}
 /* RESEARCH AND NEWSLETTER PAGE CSS */
 
 .page-intro {

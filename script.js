@@ -15,12 +15,48 @@ function sendEmail(event) {
   window.open(mailtoLink, '_blank');
 }
 
-//! RESEARCH PAGE JS
 
+
+// SPOTLIGHT CAROUSEL
+const track = document.querySelector('.spotlight-carousel-track');
+const items = document.querySelectorAll('.spotlight-item');
+const carouselWindow = document.querySelector('.spotlight-carousel-window');
+
+let currentIndex = 0;
+let autoSlideInterval;
+
+function updateCarousel() {
+  const itemWidth = items[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+function startAutoSlide() {
+  autoSlideInterval = setInterval(() => {
+    currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+    updateCarousel();
+  }, 3000);
+}
+
+function stopAutoSlide() {
+  clearInterval(autoSlideInterval);
+}
+
+carouselWindow.addEventListener('mouseenter', stopAutoSlide);
+carouselWindow.addEventListener('mouseleave', startAutoSlide);
+
+window.addEventListener('resize', updateCarousel);
+
+// Start auto-sliding and initial update
+startAutoSlide();
+updateCarousel();
+
+
+// REASEARCH ITEMS FILTER
 const buttonContainer = document.querySelector('#research-filter-buttons');
 const researchCards = document.querySelectorAll('.research-card');
 
-buttonContainer.addEventListener('click', (event) => {
+if (buttonContainer) {
+  buttonContainer.addEventListener('click', (event) => {
   if (event.target.classList.contains('research-filter-btn')) {
     const filterId = event.target.id;
 
@@ -41,3 +77,4 @@ buttonContainer.addEventListener('click', (event) => {
     });
   }
 });
+}
