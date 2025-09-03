@@ -792,12 +792,25 @@ main p {
   flex: 0 0 100%;
   padding: 20px;
   box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
 }
 
-.spotlight-item p {
-  margin: 0;
-  line-height: 1.6;
+.spotlight-item img {
+  width: auto;
+  max-height: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
 }
+.spotlight-item p {
+  margin-left: 0;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+
 /* RESEARCH AND NEWSLETTER PAGE CSS */
 
 .page-intro {
