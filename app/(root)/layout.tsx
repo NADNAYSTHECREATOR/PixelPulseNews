@@ -3,6 +3,7 @@ import "../globals.css";
 import { Playfair_Display } from "next/font/google";
 import Header from "../../components/shared/Header";
 import Footer from "../../components/shared/Footer";
+import Head from "next/head";
 
 export const playfair = Playfair_Display({
     subsets: ["latin"], 
@@ -21,6 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="apple-mobile-web-app-title" content="Pixel Pulse" />
+      </Head>
       <body
         className={`${playfair.className} bg-(--platinum)`}
       >
