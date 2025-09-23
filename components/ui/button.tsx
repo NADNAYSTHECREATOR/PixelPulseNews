@@ -23,7 +23,7 @@ const buttonVariants = cva(
         chambray: 
           "bg-(--chambray) text-(--stardust-white) hover:bg-(--oxford-blue) mt-7 font-bold shadow-md hover:shadow-xl",
         silverlakeblue: 
-          "bg-(--silver-lake-blue) text-(--stardust-white) hover:border-1 hover:border-(--oxford-blue) mt-7 font-bold shadow-md hover:shadow-xl"
+          "bg-(--silver-lake-blue) text-(--stardust-white) hover:border-1 hover:border-(--oxford-blue) mt-7 font-bold shadow-md hover:shadow-xl hover:text-(--oxford-blue)",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

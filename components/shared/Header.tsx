@@ -8,7 +8,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="flex justify-between md:items-center p-4 border-b md:flex-row bg-linear-90 from-(--rich-black) to-(--chambray) text-(--stardust-white) text-lg h-20 px-7 relative z-30">
+    <header className="flex justify-between md:items-center p-4 border-b md:flex-row bg-linear-90 from-(--rich-black) to-(--chambray) text-(--stardust-white) text-lg h-20 px-7 relative z-30 shadow-2xl">
       <p className="font-extrabold text-3xl text-(--silver-lake-blue) self-center">
         Pixel Pulse News
       </p>
@@ -20,7 +20,7 @@ export default function Header() {
           <Link href="/team" className="hover:underline hover:underline-offset-4 hover:decoration-(--silver-lake-blue) hover:decoration-2">Team</Link>
           <Link href="/research" className="hover:underline hover:underline-offset-4 hover:decoration-(--silver-lake-blue) hover:decoration-2">Research</Link>
           <Link href="/newsletters" className="hover:underline hover:underline-offset-4 hover:decoration-(--silver-lake-blue) hover:decoration-2">Newsletters</Link>
-          <Link href="/contact" className="hover:underline hover:underline-offset-4 hover:decoration-(--silver-lake-blue) hover:decoration-2">Contact</Link>
+          <Link href="mailto:pixelpulsenewsletterr@gmail.com" className="hover:underline hover:underline-offset-4 hover:decoration-(--silver-lake-blue) hover:decoration-2">Contact</Link>
         </ul>
       </nav>
 
