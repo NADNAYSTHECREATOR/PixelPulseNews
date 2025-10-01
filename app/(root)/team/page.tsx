@@ -23,7 +23,10 @@ export default function page() {
        {/* MICHEAL */}
       <TeamMember image="" name="Micheal" role="CS/AI Research Lead" bio="My name is Michael! I am currently a junior in high school and 17. I am interested in STEM concepts and how they relate to the real world. My interests include drawing, fashion, golfing, and building wooden models. In the future I aspire to be a chemical engineer, and make an impact on my community through STEM applications." />
 
-         {/* MEMBERS */}
+      {/* KATE */}
+      <TeamMember image="/Kate.webp" name="Kate Xue" role="Psychology Research Lead" bio="Hi, my name is Kate and I’m the lead researcher in the psychology department! Besides watching fun videos on psychology, I also to draw and read!" />
+         
+      {/* MEMBERS */}
       <TeamMember image="" name="Zirwah" role="Graphic Designer" bio="Hi, I'm Zirwah. I'm a STEM student currently doing my A levels and would like to work with astrophysics at some point. I love collecting random facts and stories, integrating them into art, poetry and writing whenever I can. I also love to bake! Am I good at it? Sometimes. Is it fun? Always(full time: design department)" />
       <TeamMember image="" name="Srishti" role="Biology Researcher" bio="My name is Srishti, I'm 15 and a rising sophomore in high school. I’m a full-time team member volunteering as a biology researcher. Although I haven’t decided exactly what career to pursue, STEM has always called to me. I consider learning and thinking as hobbies. Outside of STEM, I read YA fantasy books and practice Taekwondo as a black belt." />
       <TeamMember image="" name="Dara" role="Graphic Designer" bio="Hi, my name is Dara and I'm a graphics designer in the design department. I also recently joined the web department because I can't do without that ;). I want to pursue a career with coding and that allows me a lot of freedom to pursue a lot of my other interests. Currently I learn to dance and speak Korean in my free time!" />
