@@ -26,6 +26,9 @@ export default function page() {
        {/* MICHEAL */}
       <TeamMember image="" name="Micheal" role="CS/AI Research Lead" bio="My name is Michael! I am currently a junior in high school and 17. I am interested in STEM concepts and how they relate to the real world. My interests include drawing, fashion, golfing, and building wooden models. In the future I aspire to be a chemical engineer, and make an impact on my community through STEM applications." />
 
+      {/* BENNY*/}
+      <TeamMember image="/Benny.webp" name="Benny" role="Bio Research Lead" bio="I’m Benny, a 17 year old junior in high school with a strong passion for medicine, biology, and all aspects of STEM. I am also planning to pursue a pre-med track after high school in college. In my free time I enjoy playing tennis, watching sports, and most of all the thrill of different foods."/>
+
       {/* KATE */}
       <TeamMember image="/Kate.webp" name="Kate Xue" role="Psychology Research Lead" bio="Hi, my name is Kate and I’m the lead researcher in the psychology department! Besides watching fun videos on psychology, I also to draw and read!" />
          
